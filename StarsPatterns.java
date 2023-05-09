@@ -78,30 +78,73 @@ public class StarsPatterns {
 
         //Print Diamond pattern
 
-        for(int i=1;i<n;i++){
-            for(int j=i;j<=n;j++){
-                System.out.print("  ");
-            }
-            for(int j=1;j<i;j++){
-                System.out.print("* ");
-            }
-            for(int j=1;j<=i;j++){
-                System.out.print("* ");
-            }
-            System.out.println();
-        }
+//        for(int i=1;i<n;i++){
+//            for(int j=i;j<=n;j++){
+//                System.out.print("  ");
+//            }
+//            for(int j=1;j<i;j++){
+//                System.out.print("* ");
+//            }
+//            for(int j=1;j<=i;j++){
+//                System.out.print("* ");
+//            }
+//            System.out.println();
+//        }
+//        for(int i=1;i<=n;i++){
+//            for(int j=1;j<=i;j++){
+//                System.out.print("  ");
+//            }
+//            for(int j=i;j<n;j++){
+//                System.out.print("* ");
+//            }
+//            for(int j=i;j<=n;j++){
+//                System.out.print("* ");
+//            }
+//            System.out.println();
+//        }
+
+        //Print Square Parallel Bar Pattern
+
+//        for(int i=1;i<=n;i++){
+//            for(int j=1;j<=n;j++){
+//                if(j==1||j==n){
+//                    System.out.print("* ");
+//                }
+//                else{
+//                    System.out.print("  ");
+//                }
+//            }
+//            System.out.println();
+//        }
+
+        //Print Square Plus Pattern
+
         for(int i=1;i<=n;i++){
-            for(int j=1;j<=i;j++){
-                System.out.print("  ");
-            }
-            for(int j=i;j<n;j++){
-                System.out.print("* ");
-            }
-            for(int j=i;j<=n;j++){
-                System.out.print("* ");
+            for(int j=1;j<=n;j++){
+                if(i==n/2+1||j==n/2+1){
+                    System.out.print("* ");
+                }
+                else{
+                    System.out.print("  ");
+                }
             }
             System.out.println();
         }
+
+        //Print Cross Pattern
+
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=n;j++){
+                if(i==j||i+j==n+1){
+                    System.out.print("* ");
+                }
+                else{
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
+
 
 
     }
