@@ -1,46 +1,46 @@
 public class StarsPatterns {
-    public static void main(String[]args){
-        int n=5;
+    public static void main(String[] args) {
+        int n = 5;
 
-        for(int i=1;i<=n;i++){
-            for (int j=1;j<=n;j++){
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n; j++) {
                 System.out.print("* ");
             }
             System.out.println();
         }
 //        //Print Increasing Triangle
-        for(int i=1;i<=n;i++){
-            for (int j=1;j<=i;j++){
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= i; j++) {
                 System.out.print("* ");
             }
             System.out.println();
         }
 //
 //        //Print Decreasing Triangle
-        for(int i=1;i<=n;i++){
-            for (int j=i;j<=n;j++){
+        for (int i = 1; i <= n; i++) {
+            for (int j = i; j <= n; j++) {
                 System.out.print("* ");
             }
             System.out.println();
         }
 //
 //        //Print Right sided Triangle I
-        for (int i=1;i<=n;i++){
-            for(int j=i;j<=n;j++){
+        for (int i = 1; i <= n; i++) {
+            for (int j = i; j <= n; j++) {
                 System.out.print("  ");
             }
-            for(int j=1;j<=i;j++){
+            for (int j = 1; j <= i; j++) {
                 System.out.print("* ");
             }
             System.out.println();
         }
 //
 //        //Print Right sided Triangle II
-        for(int i=1;i<=n;i++){
-            for(int j=1;j<=i;j++){
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= i; j++) {
                 System.out.print("  ");
             }
-            for(int j=i;j<=n;j++){
+            for (int j = i; j <= n; j++) {
                 System.out.print("* ");
             }
             System.out.println();
@@ -48,14 +48,14 @@ public class StarsPatterns {
 
         //Print Hill Pattern
 
-        for(int i=1;i<=n;i++){
-            for(int j=i;j<=n;j++){
+        for (int i = 1; i <= n; i++) {
+            for (int j = i; j <= n; j++) {
                 System.out.print("  ");
             }
-            for(int j=1;j<=i;j++){
+            for (int j = 1; j <= i; j++) {
                 System.out.print("* ");
             }
-            for(int j=1;j<i;j++){
+            for (int j = 1; j < i; j++) {
                 System.out.print("* ");
             }
             System.out.println();
@@ -63,14 +63,14 @@ public class StarsPatterns {
 
         //Print Reverse Hill Pattern
 
-        for(int i=1;i<=n;i++){
-            for(int j=1;j<=i;j++){
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= i; j++) {
                 System.out.print("  ");
             }
-            for(int j=i;j<n;j++){
+            for (int j = i; j < n; j++) {
                 System.out.print("* ");
             }
-            for(int j=i;j<=n;j++){
+            for (int j = i; j <= n; j++) {
                 System.out.print("* ");
             }
             System.out.println();
@@ -78,26 +78,26 @@ public class StarsPatterns {
 
         //Print Diamond pattern
 
-        for(int i=1;i<n;i++){
-            for(int j=i;j<=n;j++){
+        for (int i = 1; i < n; i++) {
+            for (int j = i; j <= n; j++) {
                 System.out.print("  ");
             }
-            for(int j=1;j<i;j++){
+            for (int j = 1; j < i; j++) {
                 System.out.print("* ");
             }
-            for(int j=1;j<=i;j++){
+            for (int j = 1; j <= i; j++) {
                 System.out.print("* ");
             }
             System.out.println();
         }
-        for(int i=1;i<=n;i++){
-            for(int j=1;j<=i;j++){
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= i; j++) {
                 System.out.print("  ");
             }
-            for(int j=i;j<n;j++){
+            for (int j = i; j < n; j++) {
                 System.out.print("* ");
             }
-            for(int j=i;j<=n;j++){
+            for (int j = i; j <= n; j++) {
                 System.out.print("* ");
             }
             System.out.println();
@@ -105,12 +105,11 @@ public class StarsPatterns {
 
         //Print Square Parallel Bar Pattern
 
-        for(int i=1;i<=n;i++){
-            for(int j=1;j<=n;j++){
-                if(j==1||j==n){
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n; j++) {
+                if (j == 1 || j == n) {
                     System.out.print("* ");
-                }
-                else{
+                } else {
                     System.out.print("  ");
                 }
             }
@@ -119,12 +118,11 @@ public class StarsPatterns {
 
         //Print Square Plus Pattern
 
-        for(int i=1;i<=n;i++){
-            for(int j=1;j<=n;j++){
-                if(i==n/2+1||j==n/2+1){
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n; j++) {
+                if (i == n / 2 + 1 || j == n / 2 + 1) {
                     System.out.print("* ");
-                }
-                else{
+                } else {
                     System.out.print("  ");
                 }
             }
@@ -133,12 +131,11 @@ public class StarsPatterns {
 
         //Print Cross Pattern
 
-        for(int i=1;i<=n;i++){
-            for(int j=1;j<=n;j++){
-                if(i==j||i+j==n+1){
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n; j++) {
+                if (i == j || i + j == n + 1) {
                     System.out.print("* ");
-                }
-                else{
+                } else {
                     System.out.print("  ");
                 }
             }
@@ -146,25 +143,23 @@ public class StarsPatterns {
         }
         //Print Hollow Square Pattern
 
-        for(int i=1;i<=n;i++){
-            for(int j=1;j<=n;j++){
-                if(i==1||j==1||i==n||j==n){
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n; j++) {
+                if (i == 1 || j == 1 || i == n || j == n) {
                     System.out.print("* ");
-                }
-                else{
+                } else {
                     System.out.print("  ");
                 }
             }
             System.out.println();
         }
-         //Print Hollow Increasing Triangle
+        //Print Hollow Increasing Triangle
 
-        for(int i=1;i<=n;i++){
-            for(int j=1; j<=n;j++){
-                if(i==n||j==1||j==i){
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n; j++) {
+                if (i == n || j == 1 || j == i) {
                     System.out.print("* ");
-                }
-                else{
+                } else {
                     System.out.print("  ");
                 }
 
@@ -174,19 +169,60 @@ public class StarsPatterns {
 
         //Print Hollow Decreasing Triangle
 
-        for(int i=1;i<=n;i++){
-            for(int j=i;j<=n;j++){
-                if(i==1||j==i||j==n){
+        for (int i = 1; i <= n; i++) {
+            for (int j = i; j <= n; j++) {
+                if (i == 1 || j == i || j == n) {
                     System.out.print("* ");
-                }
-                else{
+                } else {
                     System.out.print("  ");
                 }
             }
             System.out.println();
         }
 
+        //Print Hollow Diamond Pattern
 
+        for (int i = 1; i <= n; i++) {
+            for (int j = i; j <= n; j++) {
+                System.out.print("  ");
+            }
+            for (int j = 1; j < i; j++) {
+                if (j == 1) {
+                    System.out.print("* ");
+                } else {
+                    System.out.print("  ");
+                }
+            }
+            for (int j = 1; j <= i; j++) {
+                if (j == i) {
+                    System.out.print("* ");
+                } else {
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
+
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j < i; j++) {
+                System.out.print("  ");
+            }
+            for (int j = i; j < n; j++) {
+                if (j == i) {
+                    System.out.print("* ");
+                } else {
+                    System.out.print("  ");
+                }
+            }
+            for (int j = i; j <= n; j++) {
+                if (j == n) {
+                    System.out.print("* ");
+                } else {
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
 
 
     }
