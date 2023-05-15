@@ -24,9 +24,6 @@ public class SpyNumber {
             System.out.println(number+" its NOT a spy number");
         }
 
-
-
-
     }
 
 }
