@@ -16,6 +16,21 @@ public class DuplicateElement {
             }
         }
 
+        String []names={"Tom","Steve","Rick","Steve","Rick"};
+
+        for(int i=0;i<names.length;i++){
+            boolean isDuplicate=false;
+            for(int j=i+1;j< names.length;j++){
+                if(names[i].equals(names[j])){
+                    isDuplicate=true;
+                    break;
+                }
+            }
+            if(isDuplicate){
+                System.out.println((names[i]));
+            }
+        }
+
 
     }
 }
